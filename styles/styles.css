@@ -12,8 +12,7 @@ header{
     left: 0;
     top: 0;
     right: 0;
-    background: url("../images/header-bg.png");
-    background-repeat: no-repeat;
+    background: url("../images/header-bg.png") no-repeat;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,66 +124,82 @@ header .header-button a{
 .start-footer-first{
     width: 462px;
     height: 549px;
-    opacity: 0;
-    z-index: 1;
-}
-.start-footer-first1{
-    width: 462px;
-    height: 549px;
-    z-index: 1;
+    background: transparent center;
 }
 .start-footer-second{
     width: 462px;
     height: 549px;
-    opacity: 0;
-    z-index: 1;
+    background: transparent center;
 }
-.start-footer-second1{
+.start-footer-third {
     width: 462px;
     height: 549px;
-    z-index: 1;
-}
-.start-footer-third{
-    width: 462px;
-    height: 549px;
-    opacity: 0;
-    z-index: 1;
-}
-.start-footer-third1{
-    width: 462px;
-    height: 549px;
-    z-index: 1;
+    background: transparent center;
 }
 .start-footer-fourth{
     width: 462px;
     height: 549px;
-    opacity: 0;
-    z-index: 1;
-}
-.start-footer-fourth1{
-    width: 462px;
-    height: 549px;
-    z-index: 1;
+    background: transparent center;
 }
 .start-footer-first:hover{
-    background: url("../images/start-bg.jpg") no-repeat 0 0;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
+    background-position: center;
+    -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 .start-footer-second:hover{
-    background: url("../images/start-bg.jpg") no-repeat 0 0;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
+    background-position: center;
+    -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 .start-footer-third:hover{
-    background: url("../images/start-bg.jpg") no-repeat 0 0;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+    background: transparent;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
+    background-position: center;
+    -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 .start-footer-fourth:hover{
+    background: transparent;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
+    -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
+    background-position: center;
+}
+.start-footer-top-text{
     opacity: 1;
-    transition: all 0.5s ease-in-out;
-    background: url("../images/start-bg.jpg") no-repeat 0 0;
+    width: 257px;
+    height: 99px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    align-self: stretch;
+}
+.start-footer-bottom-text{
+    width: 257px;
+    height: 171px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #EEEDED;
 }
 footer{
     height: 9000px;
