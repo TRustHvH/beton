@@ -90,7 +90,7 @@ header .header-button a{
 .start-text-left{
     width: 580px;
     height: 112px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -103,7 +103,7 @@ header .header-button a{
 .start-text-right{
     width: 580px;
     height: 112px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -181,7 +181,7 @@ header .header-button a{
     opacity: 1;
     width: 257px;
     height: 99px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -192,7 +192,7 @@ header .header-button a{
 .start-footer-bottom-text{
     width: 257px;
     height: 171px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
