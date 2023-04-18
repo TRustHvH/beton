@@ -3,21 +3,23 @@ body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
 }
 header{
     position: fixed;
-    width: 100%;
+    width:100%;
     height: 128px;
     left: 0;
     top: 0;
     right: 0;
-    background: url("../images/header-bg.png") no-repeat center;
+    background: url("../images/header-bg.svg") no-repeat center;
+    background-size: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     z-index: 2;
+
 }
 .header-svg{
     margin-left: 150px;
@@ -55,10 +57,12 @@ header a button{
     letter-spacing: 0.03em;
     text-transform: capitalize;
     background: #FDBD13;
-    box-shadow: 2px 2px 10px rgba(253, 189, 0.15);
     position: relative;
     left: -75px;
-
+}
+header a button:hover{
+    box-shadow: 2px 2px 10px rgba(253, 189, 0.15);
+    transition: all .2s ease-in-out;
 }
 header .header-button a{
     text-decoration: none;
@@ -121,65 +125,77 @@ header .header-button a{
     display: flex;
     background: #0B2360;
     justify-content: center;
+    z-index: 1;
 }
+
 .start-footer-first{
     width: 462px;
     height: 549px;
-    background: transparent center;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") center no-repeat;
 }
 .start-footer-second{
     width: 462px;
     height: 549px;
-    background: transparent center;
+    background: #0B2360 center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity:0;
 }
 .start-footer-third {
     width: 462px;
     height: 549px;
-    background: transparent center;
+    background: #0B2360 center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
 }
 .start-footer-fourth{
     width: 462px;
     height: 549px;
-    background: transparent center;
+    background: #0B2360 center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
 }
-.start-footer-first:hover{
-    background: transparent;
-    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
-    background-position: center;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+.start-footer-first.active, .start-footer-second.active .start-footer-third.active .start-footer-fourth.active{
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 .start-footer-second:hover{
-    background: transparent;
-    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
-    background-position: center;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg1.jpg") no-repeat center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 1;
 }
 .start-footer-third:hover{
-    background: transparent;
-    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
-    background-position: center;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg2.jpg") no-repeat center;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 1;
 }
 .start-footer-fourth:hover{
-    background: transparent;
-    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg.jpg") no-repeat 0 0;
-    -webkit-transition: background-image 1s ease-in-out;
-    -moz-transition: background-image 1s ease-in-out;
-    -o-transition: background-image 1s ease-in-out;
-    transition: background-image 1s ease-in-out;
-    background-position: center;
-}
-.start-footer-top-text{
+    background: linear-gradient(180deg, rgba(11, 35, 96, 0.4) 50%, rgba(11, 35, 96, 0) 78.65%), url("../images/start-bg3.jpg") no-repeat center;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
     opacity: 1;
+}
+
+.start-footer-top-text{
+
     width: 257px;
     height: 99px;
     font-family: 'Roboto', sans-serif;
@@ -189,9 +205,11 @@ header .header-button a{
     line-height: 33px;
     color: #FFFFFF;
     align-self: stretch;
-    position: relative;
-    top: 40px;
-    left: 50px;
+    position: absolute;
+    top: 900px;
+    left: calc(50% - 875px);
+    cursor: default;
+    pointer-events: none;
 }
 .start-footer-bottom-text{
     width: 257px;
@@ -204,9 +222,49 @@ header .header-button a{
     display: flex;
     align-items: center;
     color: #EEEDED;
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 1050px;
+    left: calc(50% - 875px);
+    cursor: default;
+    pointer-events: none;
+
+}
+.start-footer a{
+    position: absolute;
+    width: 135px;
+    height: 43px;
+    background: #FDBD13;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    top: 1300px;
     left: 50px;
+    color: #0B2360;
+    z-index: 1;
+    pointer-events: none;
+}
+.start-footer button{
+    all: unset;
+    width: 135px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    position: relative;
+    background: #FDBD13;
+
+}
+.start-footer a:hover button:hover{
+    box-shadow: 2px 2px 10px rgba(253, 189, 0.15);
+    transition: all .2s ease-in-out;
 }
 .about{
     width: 100%;
@@ -223,7 +281,7 @@ header .header-button a{
     width: 270px;
     height: 124px;
     position: relative;
-    left: -525px;
+    left: -625px;
     top: 57px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -237,7 +295,7 @@ header .header-button a{
     width: 875px;
     height: 204px;
     position: relative;
-    left: -220px;
+    left: -320px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -263,7 +321,8 @@ header .header-button a{
     box-shadow: 2px 2px 10px rgba(253, 189, 19, 0.15);
 }
 .about a:hover{
-    opacity: .8;
+    box-shadow: 0px 1px 5px rgba(11, 35, 96, 0.05), 0px 5px 11px rgba(11, 35, 96, 0.2);
+    transition: all 100ms ease-in-out;
 }
 .about a{
     width: 370px;
@@ -274,7 +333,7 @@ header .header-button a{
     letter-spacing: 0.03em;
     text-transform: capitalize;
     position: relative;
-    left: 560px;
+    left: 520px;
     top: -230px;
     text-decoration: none;
 }

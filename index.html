@@ -8,6 +8,7 @@
     <script src="scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -55,37 +56,43 @@
     <div class="container">
         <div class="start">
             <p class="start-text-left">Устройство промышленных полов</p>
-            <p class="start-text-right">Выполнение  промышленных полов является одной из наших основных специализаций.
-                Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.</p>
+            <p class="start-text-right">Выполнение  промышленных полов является одной из наших основных специализаций. Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.</p>
         </div>
         <div class="start-footer">
-                <div class="start-footer-first">
-                    <p class="start-footer-top-text" style="opacity: 1;">Устройство промышленных полов</p>
-                    <p class="start-footer-bottom-text">Выполнение  промышленных полов является одной из наших основных специализаций.
-                        Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.
-                    </p>
-                </div>
-                <div class="start-footer-second">
-                    <p class="start-footer-top-text">Монолитные конструкции</p>
-                    <p class="start-footer-bottom-text">Устройство монолитных конструкций является одной из наших основных специализаций.
-                        Наши специалисты готовы вести объект с нуля - начиная с составления техкарты и разбивочной подосновы, устройства земляных работ, временных дорог и сооружений - до сдачи готового монолитного каркаса и всей необходимой исполнительной документации.</p>
-                </div>
-                <div class="start-footer-third">
-                    <p class="start-footer-top-text" style="width: 300px">Строительно-монтажные работы</p>
-                    <p class="start-footer-bottom-text" style="top: -45px">Плоских и скатных кровель Сендвич-панелей Монтаж металло-конструкций</p>
-                </div>
-                <div class="start-footer-fourth">
-                    <p class="start-footer-top-text">Строительство частного сектора</p>
-                    <p class="start-footer-bottom-text" style="top: 1px">Выполнение  промышленных полов является одной из наших основных специализаций. Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.</p>
-                </div>
+            <div>
+                <div class="start-footer-first" id="start-footer-first"></div>
+                <p class="start-footer-top-text">Устройство промышленных полов</p>
+                <p class="start-footer-bottom-text">Выполнение промышленных полов является одной из наших основных специализаций. Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.</p>
+                <a href="" id="clickable"><button>Подробнее</button></a>
             </div>
-            <div class="about">
-                <h1>О нас</h1>
-                <p>Concrete development&emsp;В переводе означает развитие, усовершенствование бетонных технологий – это и есть основная задача,мантра нашей компании.</p>
-                <a href=""><button>Узнать больше</button></a>
+            <div>
+                <div class="start-footer-second" id="start-footer-second" onmouseover="hoveropenother()" onmouseout="hovercloseother()"></div>
+                <p class="start-footer-top-text" style="left: calc(50% - 415px);">Монолитные конструкции</p>
+                <p class="start-footer-bottom-text" style="left: calc(50% - 415px);">Устройство монолитных конструкций является одной из наших основных специализаций. Наши специалисты готовы вести объект с нуля - начиная с составления техкарты и разбивочной подосновы, устройства земляных работ, временных дорог и сооружений - до сдачи готового монолитного каркаса и всей необходимой исполнительной документации.</p>
+                <a href="" style="left: calc(50% - 415px);" id="clickable1"><button>Подробнее</button></a>
+            </div>
+            <div>
+                <div class="start-footer-third" id="start-footer-third" onmouseover="hoveropenother()" onmouseout="hovercloseother()"></div>
+                <p class="start-footer-top-text" style="width: 300px;left: calc(50% + 50px);">Строительно-монтажные работы</p>
+                <p class="start-footer-bottom-text" style="top: 965px; left: calc(50% + 50px);">Плоских и скатных кровель Сендвич-панелей Монтаж металло-конструкций</p>
+                <a href="" style="left: calc(50% + 50px);" id="clickable2"><button>Подробнее</button></a>
+            </div>
+            <div>
+                <div class="start-footer-fourth" id="start-footer-fourth" onmouseover="hoveropenother()" onmouseout="hovercloseother()"></div>
+                <p class="start-footer-top-text" style="left: calc(50% + 505px);">Строительство частного сектора</p>
+                <p class="start-footer-bottom-text" style="top: 1012px; left: calc(50% + 505px);">Выполнение промышленных полов является одной из наших основных специализаций. Наши специалисты всегда помогут определится с оптимальным покрытием пола под ваши требования и произведут все необходимы расчеты.</p>
+                <a href="" style="left: calc(50% + 505px);" id="clickable3"><button>Подробнее</button></a>
             </div>
         </div>
-
+        <div class="about">
+            <h1>О нас</h1>
+            <p>Concrete development&emsp;В переводе означает развитие, усовершенствование бетонных технологий – это и
+                есть основная задача,мантра нашей компании.</p>
+            <a href="">
+                <button>Узнать больше</button>
+            </a>
+        </div>
+    </div>
     <footer></footer>
 </body>
 </html>
