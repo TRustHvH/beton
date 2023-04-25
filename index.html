@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -222,12 +223,23 @@
         </div>
         <div class="form">
             <img src="images/mushik.png" style="margin-left: calc(50% - 620px)">
-            <form>
+            <div>
+                <form method="post">
+                    <p>Напишите ниже своё имя и номер телефона, мы вам перезвоним.</p>
+                    <input placeholder="Иванов Владимир Олегович" name="name" required>
+                    <input placeholder="+7 (999) 856 - 34-34" name="number" type="tel" required>
+                    <input placeholder="Иванов Владимир Олегович" name="message" >
 
-            </form>
+                </form>
+                <div>
+                    <input type="checkbox" class="checkbox" value="yes">
+                    <label>Я согласен с условиями передачи информации.</label>
+                </div>
+
+            </div>
         </div>
     </div>
     <footer></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </body>
 </html>
