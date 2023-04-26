@@ -3,8 +3,11 @@ body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+
     scrollbar-color: rebeccapurple green;
+}
+html{
+    scroll-behavior: smooth;
 }
 * {
     scrollbar-width: thin;
@@ -42,9 +45,6 @@ header{
 }
 .header-svg{
     margin-left: 150px;
-}
-header span{
-    margin-top: -5px;
 }
 .header-links{
     display: flex;
@@ -784,6 +784,40 @@ label:before {
 .companies-slider img{
     height: fit-content;
 
+}
+.button-up{
+    width: 96px;
+    height: 96px;
+    left: 90%;
+    top: 80%;
+    z-index: 10;
+    position: fixed;
+    opacity: 0;
+    filter: drop-shadow(4px 4px 10px rgba(11, 35, 96, 0.1));
+}
+.footer-information{
+    display: flex;
+    flex-direction: column;
+}
+.footer-information h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #E4ECFF;
+}
+.footer-information p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 footer{
     display: flex;
