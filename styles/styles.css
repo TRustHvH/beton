@@ -43,6 +43,9 @@ header{
 .header-svg{
     margin-left: 150px;
 }
+header span{
+    margin-top: -5px;
+}
 .header-links{
     display: flex;
     align-items: center;
@@ -94,8 +97,6 @@ header .header-button a{
     left: 0;
     right: 0;
     top: 128px;
-    z-index: 1;
-    margin: 0 auto;
 }
 .start{
     width: 100%;
@@ -549,7 +550,7 @@ header .header-button a{
     height: 52px;
     background: #FDBD13;
     left: calc(50%);
-
+    transition: all .2s ease-in-out;
 }
 .image-slider button:hover{
     box-shadow: 2px 2px 10px rgba(253, 189, 0.15);
@@ -609,7 +610,7 @@ header .header-button a{
 }
 .form form{
     width: 535px;
-    height: 375px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -627,6 +628,7 @@ header .header-button a{
     display: flex;
     align-items: center;
     color: #1B1B1B;
+    margin-block-end: 2px;
 }
 .form form input{
     display: flex;
@@ -636,16 +638,165 @@ header .header-button a{
     width: 415px;
     height: 56px;
     border-radius: 4px;
+    border: 1px solid #79747E;
 }
-.checkbox{
+.input-checkbox{
+    display: flex;
+    height: 20px;
+
+
+}
+.input-checkbox span{
+    margin-top: 22px;
+
+    margin-left: 20px;
+}
+input[type="checkbox"] {
+    display: none !important;
+}
+label {
+    color: #FFFFFF;
+    cursor: default;
     width: 18px;
     height: 18px;
+    margin-top: 20px;
+}
+label:before {
+    content: " ";
+    color: #FFFFFF;
+    display: flex;
+    font: 15px/25px FontAwesome;
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 2px solid #FDBD13;
     border-radius: 2px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
-.checkbox:checked{
+.checkbox:checked + label:before {
+    content: "\f00c";
     background-color: #FDBD13;
+    width: 18px;
+    height: 18px;
 }
+.form button{
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 133px;
+    height: 33px;
+    background: #FDBD13;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0B2360;
+    transition: all .2s ease-in-out;
+    margin-top: 40px;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+}
+.for-text-upper-input p{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #49454F;
+    margin-top: -7px;
+    margin-left: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.form button:hover{
+    box-shadow: 2px 2px 10px rgba(253, 189, 0.15);
+    transition: all .2s ease-in-out;
+}
+.companies{
+    width: 100%;
+    height: 337px;
+    background: url("../images/svg-bg.svg") no-repeat center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.doveryaut{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 28px;
+    margin: 50px auto 0px auto;
+    margin-block-end: 0;
+}
+.doveryaut p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 129.19%;
+    letter-spacing: -0.045em;
+    color: #1F2547;
 
+}
+@-webkit-keyframes ani{
+    5%
+    {
+        -webkit-transform: translateX(0);
+    }
+    45%
+    {
+        -webkit-transform: translateX(-58%);
+    }
+    55%
+    {
+        -webkit-transform: translateX(-58%);
+    }
+    95%
+    {
+        -webkit-transform: translateX(0);
+    }
+}
+.companies-slider{
+    display: flex;
+    gap: 100px;
+    width: fit-content;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 10px;
+    -webkit-animation: ani 15s linear ;
+    -webkit-animation-iteration-count: infinite;
+}
+.companies-slider img{
+    height: fit-content;
+
+}
 footer{
-    height: 9000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 6040px;
+    height: 370px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 200px;
+    padding-left: 200px;
+    background: #0B2360;
 }
