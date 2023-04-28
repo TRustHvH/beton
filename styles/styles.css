@@ -40,7 +40,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    z-index: 2;
+    z-index: 10;
 
 }
 .header-svg{
