@@ -561,7 +561,7 @@ header .header-button a{
     width: 1750px;
     gap: 64px;
     position: relative;
-    left: calc(50% - 800px);
+    left: calc(50% - 830px);
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: 8px;
