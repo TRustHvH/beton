@@ -1,5 +1,5 @@
 .post-1{
-    background: url("../images/news-bg-right.svg") center top no-repeat;
+    background: url("news-bg-right.svg") center top no-repeat;
     height: 781px;
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@
     position: absolute;
     z-index: 1;
     margin-top: -210px;
-    left: 797px;
+    left: calc(50% - 120px);
 }
 .post-1 p{
     width: 580px;
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     height: 780px;
-    background: url("../images/news-bg-left.svg") center top  no-repeat;
+    background: url("news-bg-left.svg") center top  no-repeat;
 
     margin-left: 0;
 }
@@ -69,14 +69,13 @@
     position: absolute;
     z-index: 1;
     margin-top: -30px;
-    left: 220px;
+    left: calc(50% - 691px);
 }
 .post-2 p{
-
     width: 580px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #1B1B1B;
@@ -90,4 +89,90 @@
     font-size: 18px;
     line-height: 40px;
     color: #1B1B1B;
+}
+.post-3{
+    height: 1024px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FDBD13 54.48%);
+}
+.post-3 h1{
+    -webkit-text-stroke:6px #0B2360;
+    -webkit-text-fill-color:transparent;
+    color: white;
+    font-size: 300px;
+    font-family: sans-serif;
+    margin-left: -50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.post-3 img{
+    width: 462px;
+    height: 563px;
+    position: absolute;
+    margin-top: -482px;
+    margin-left: calc(50% + 400px);
+}
+.post-3-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 524px;
+    margin: auto;
+}
+.post-3-elements h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1B1B1B;
+    width: 450px;
+}
+.post-3-elements p + li{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    color: #1B1B1B;
+}
+.post-3-elements p {
+    width: 400px;
+    margin-left: -50px;
+}
+.companies h1{
+    text-align: right;
+    -webkit-text-stroke: 2px #0B2360;
+    color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 90%;
+    letter-spacing: -5px;
+    margin-right: -8px;
+}
+.companies-slider img{
+    height: 110% !important;
+}
+@-webkit-keyframes ani{
+    5%
+    {
+        -webkit-transform: translateX(0);
+    }
+    45%
+    {
+        -webkit-transform: translateX(-68%);
+    }
+    55%
+    {
+        -webkit-transform: translateX(-68%);
+    }
+    95%
+    {
+        -webkit-transform: translateX(0);
+    }
+}
+.companies-slider{
+    padding-top: 100px;
 }

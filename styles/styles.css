@@ -3,15 +3,14 @@ body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-
-    scrollbar-color: rebeccapurple green;
+    scrollbar-color: #0B2360;
 }
 html{
     scroll-behavior: smooth;
 }
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(41, 148, 99, .75) #fff;
+    scrollbar-color: #0B2360;
 }
 
 *::-webkit-scrollbar {
@@ -784,7 +783,6 @@ label:before {
 }
 .companies-slider img{
     height: fit-content;
-
 }
 .button-up{
     width: 96px;
