@@ -824,11 +824,9 @@ footer{
     align-items: center;
     flex-direction: row;
     position: absolute;
-    top: 6040px;
     height: 370px;
     left: 0px;
     right: 0px;
-    bottom: 0px;
     padding-right: 200px;
     padding-left: 200px;
     background: #0B2360;
