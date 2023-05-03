@@ -28,7 +28,7 @@
     top: 0px;
 }
 .gallery-images{
-    background: linear-gradient(180deg, #FDBD13 17.25%, #0B2360 93.12%);
+    background: linear-gradient(180deg, #FDBD13 17.25%, #0B2360 93.12%) no-repeat;
     columns: 2;
 }
 .gallery-images img{
