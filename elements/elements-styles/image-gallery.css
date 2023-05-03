@@ -37,3 +37,20 @@
     padding: 25px 25px 25px 25px;
     margin-left: calc(50% - 450px);
 }
+.gallery-images p{
+    width: 551px;
+    height: 81px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0B2360;
+    margin-top: -300px;
+    margin-left: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../photo-description.svg") no-repeat;
+}
